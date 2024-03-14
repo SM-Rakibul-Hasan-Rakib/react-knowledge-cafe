@@ -50,7 +50,7 @@ const Blog = ({ blog, handleAddToBookmark }) => {
     </div>
   );
 };
-Blog.PropTypes = {
+Blog.prototype = {
   blog: PropTypes.object.isRequired,
   handleAddToBookmark: PropTypes.func,
 };
