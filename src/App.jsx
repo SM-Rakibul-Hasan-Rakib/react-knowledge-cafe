@@ -1,5 +1,6 @@
 import "./App.css";
 import Blogs from "./Components/Blogs/Blogs";
+import Bookmark from "./Components/Bookmark/Bookmark";
 import Header from "./Components/Header/Header";
 
 // import Header from './Components/Header/Header'
@@ -10,7 +11,10 @@ function App() {
   return (
     <>
     <Header></Header>
+    <div>
     <Blogs></Blogs>
+    <Bookmark></Bookmark>
+    </div>
     
       {/* <h1 className="text-6xl">Knowledge Cafe</h1> */}
     </>
