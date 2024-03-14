@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Blog from "../Blog/Blog";
 
+
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
