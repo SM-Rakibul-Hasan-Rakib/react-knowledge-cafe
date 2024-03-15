@@ -33,9 +33,9 @@ import Bookmark from "../Bookmark/Bookmark";
 import propTypes from "prop-types";
 
 const Bookmarks = ({ booksmarks }) => {
-  return (
-    <div className="md:w-1/3">
-    <h2 className="text-3xl">Book Mark : {booksmarks.length}</h2>
+  return ( 
+    <div className="md:w-1/3 ml-5 mt-10 bg-gray-300">
+    <h2 className="text-3xl text-center ">Book Mark : {booksmarks.length}</h2>
     {
       booksmarks.map(bmk => <Bookmark key={bmk.id} bookmark={bmk}></Bookmark>)
     }
