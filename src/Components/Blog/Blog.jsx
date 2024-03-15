@@ -46,12 +46,15 @@ const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
           </span>
         ))}
       </p>
-      <button className="text-purple-600">Mark As Red</button>
+      <button onClick={() =>handleMarkAsRead(reading_time)} className="text-purple-800 font-bold underline">
+        Mark As Read
+      </button>
     </div>
   );
 };
 Blog.prototype = {
   blog: PropTypes.object.isRequired,
   handleAddToBookmark: PropTypes.func,
+  handleMarkAsRead: PropTypes.func,
 };
 export default Blog;
